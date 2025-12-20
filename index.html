@@ -1,157 +1,139 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>WhatsApp – 𝗖𝗲𝗸 𝗢𝗽𝘀𝗶 𝗕𝘆 𝗥𝗲𝘅𝘇𝘆𝟭𝟵</title>
+<title>Checkout Demo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
 * {
-  box-sizing: border-box;
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
 }
-
 body {
-  margin: 0;
-  background: #ece5dd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a00ff, #8f3bff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container {
-  width: 360px;
-  background: #ffffff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+.app {
+    width: 360px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
 }
 
+/* HEADER */
 .header {
-  background: #075e54;
-  padding: 20px;
-  text-align: center;
-  color: white;
+    background: #6a00ff;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.header img {
-  width: 48px;
-  margin-bottom: 8px;
-}
-
-.header h2 {
-  margin: 0;
-  font-size: 18px;
-}
-
+/* CONTENT */
 .content {
-  padding: 20px;
+    padding: 16px;
 }
 
-label {
-  font-size: 13px;
-  color: #555;
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-input {
-  width: 100%;
-  padding: 12px;
-  margin-top: 6px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 15px;
+.product img {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
+.product-info h4 {
+    margin: 0;
+    font-size: 14px;
+}
+.product-info p {
+    margin: 3px 0 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.price {
+    background: #f4f1ff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
 button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 18px;
-  background: #25d366;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    background: #6a00ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
-button:hover {
-  background: #20bd5a;
+/* QR */
+.qr-box {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
 }
-
-.result {
-  margin-top: 15px;
-  padding: 12px;
-  border-radius: 6px;
-  font-size: 14px;
-  display: none;
+.qr-box img {
+    width: 200px;
+    margin-top: 10px;
 }
-
-.safe {
-  background: #e7f7ee;
-  color: #1b8e5a;
-}
-
-.ban {
-  background: #fdeaea;
-  color: #c0392b;
-}
-
-.footer {
-  text-align: center;
-  font-size: 11px;
-  color: #888;
-  padding: 10px;
+.note {
+    font-size: 11px;
+    color: #777;
+    margin-top: 8px;
 }
 </style>
 </head>
-
 <body>
 
-<div class="container">
-  <div class="header">
-    <!-- ganti logo jika mau -->
-    <img src="https://i.ibb.co.com/Hpb52zqX/Proyek-Baru-FA95148.png/" alt="WhatsApp">
-    <h2>𝗖𝗘𝗞 𝗢𝗣𝗦𝗜 𝗕𝗬 𝐑𝐄𝐗𝐙𝐘𝟏𝟗</h2>
-  </div>
+<div class="app">
+    <div class="header">ᴜɴʙᴀɴᴅ ᴡʜᴀᴛsᴀᴘᴘ ᴏᴘsɪ ᴘᴇʀᴍᴀ ʜᴀʀᴅ ʙᴀᴛᴜ</div>
 
-  <div class="content">
-    <label>Nomor WhatsApp</label>
-    <input type="text" id="number" placeholder="628xxxxxxxxxx">
+    <div class="content">
+        <div class="product">
+            <!-- LOGO -->
+            <img src="https://i.ibb.co.com/prnpjMZZ/ef55acaed134cf97d2a5f9f1e4815295.jpg" alt="Logo">
+            <div class="product-info">
+                <h4>Produk Unband Whatsapp</h4>
+                <p>UNBAND PERMA HARD BATU</p>
+            </div>
+        </div>
 
-    <button onclick="check()">𝗖𝗘𝗞 𝗡𝗢𝗠𝗘𝗥</button>
+        <div class="price">Total: Rp 85.000</div>
 
-    <div id="result" class="result"></div>
-  </div>
+        <button onclick="showQR()">𝗧𝗘𝗥𝗔𝗡𝗦𝗙𝗘𝗥 𝗦𝗘𝗞𝗔𝗥𝗔𝗡𝗚</button>
 
-  <div class="footer">
-    Ini hanya web yg dibuat untuk cek opsi, bukan sistem WhatsApp resmi
-  </div>
+        <div class="qr-box" id="qr">
+            <p>Scan QR untuk bayar</p>
+            <!-- GANTI FOTO QR -->
+            <img src="https://i.ibb.co.com/HfcfkLPt/qr-ID1025436051136-12-12-25-176548126-1765481264401.jpg="QR">
+            <div class="note"> Kirim bukti tf ke @Rexzyxmodz</div>
+        </div>
+    </div>
 </div>
 
 <script>
-function check() {
-  const num = document.getElementById("number").value;
-  const res = document.getElementById("result");
-
-  if (!num.startsWith("62") || num.length < 10) {
-    res.style.display = "block";
-    res.className = "result ban";
-    res.innerHTML = "❌ Gunakan format 62xxxx";
-    return;
-  }
-
-  // SIMULASI status
-  const ok = Math.random() > 0.5;
-
-  res.style.display = "block";
-  if (ok) {
-    res.className = "result safe";
-    res.innerHTML = "✅ Nomor aktif & aman";
-  } else {
-    res.className = "result ban";
-    res.innerHTML = "⛔ 𝙋𝙀𝙍𝙈𝘼𝙉𝙀𝙉 𝙃𝘼𝙍𝘿 𝘽𝘼𝙏𝙐 / (𝙗𝙪𝙩𝙪𝙝 𝙪𝙣𝙗𝙖𝙣𝙙? 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 @Rexzyxmodz)";
-  }
+function showQR() {
+    document.getElementById("qr").style.display = "block";
 }
 </script>
 
