@@ -3,129 +3,173 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>𝗥𝗶𝘇𝘇𝘆𝗦𝘁𝗼𝗿𝗲</title>
+<title>𝗥𝗲𝘅𝘇𝘆𝗦𝘁𝗼𝗿𝗲</title>
 
 <style>
 body{
     margin:0;
-    font-family:Arial, sans-serif;
-    min-height:100vh;
-    background:linear-gradient(135deg,#7a00ff,#ff0080);
-    display:flex;
-    justify-content:center;
+    background:#12001f;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#ffffff;
 }
 
-.wrapper{
-    width:390px;
-    color:#fff;
+/* HEADER */
+.header{
+    background:linear-gradient(90deg,#5b21b6,#7c3aed);
+    padding:14px;
+    text-align:center;
+    font-weight:bold;
+    font-size:14px;
+    border-radius:0 0 20px 20px;
+}
+
+/* BANNER */
+.banner{
+    margin:15px;
+    border-radius:20px;
+    overflow:hidden;
+}
+.banner img{
+    width:100%;
+    display:block;
+}
+
+/* MENU GRID */
+.menu{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    padding:15px;
+}
+.menu-box{
+    background:linear-gradient(135deg,#6d28d9,#a78bfa);
+    border-radius:25px;
+    padding:15px;
     text-align:center;
 }
-
-/* HEADER BANNER */
-.banner{
-    background:url("https://i.ibb.co.com/b5mBhdgy/Proyek-Baru-6-B6-F6-FC.png") center/cover no-repeat;
-    height:140px;
+.menu-box img{
+    width:100%;
+    border-radius:20px;
 }
-
-/* PROFILE */
-.profile{
-    margin-top:-45px;
-}
-.profile img{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-    border:4px solid #fff;
-    background:#000;
-}
-.username{
-    margin-top:10px;
+.menu-box h3{
+    margin:10px 0 5px;
+    font-size:14px;
     font-weight:bold;
-    font-size:16px;
 }
-
-/* ICON SOSMED */
-.icons{
-    margin:12px 0;
-}
-.icons img{
-    width:26px;
-    margin:0 8px;
-}
-
-/* BUTTON */
-.btn{
-    display:block;
-    background:#fff;
-    color:#000;
+.menu-box a{
+    display:inline-block;
+    background:#2e1065;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
     text-decoration:none;
-    padding:15px;
-    margin:12px 20px;
-    border-radius:14px;
-    font-weight:bold;
 }
 
-/* FLOAT WA */
-.float-wa{
-    position:fixed;
-    bottom:20px;
-    right:20px;
+/* TITLE */
+.title{
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    margin:15px 0 5px;
 }
-.float-wa img{
-    width:55px;
+
+/* ADMIN GRID */
+.admin-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    padding:15px;
+}
+.admin-box{
+    background:linear-gradient(135deg,#6d28d9,#a78bfa);
+    border-radius:25px;
+    padding:15px;
+    text-align:center;
+}
+.admin-box img{
+    width:100%;
+    border-radius:20px;
+}
+.admin-box p{
+    font-size:13px;
+    font-weight:bold;
+    margin:10px 0 5px;
+}
+.admin-box a{
+    display:inline-block;
+    background:#2e1065;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    text-decoration:none;
+}
+
+/* PARTNER */
+.partner{
+    margin:15px;
+    border-radius:20px;
+    overflow:hidden;
+}
+.partner img{
+    width:100%;
+    display:block;
 }
 </style>
 </head>
+
 <body>
 
-<div class="wrapper">
-
-    <!-- BANNER -->
-    <div class="banner"></div>
-
-    <!-- PROFILE -->
-    <div class="profile">
-        <img src="https://i.ibb.co.com/hR4dx4N3/quality-restoration-20251225020207220.png" alt="Logo">
-        <div class="username">@𝗥𝗶𝘇𝗸𝘆𝗦𝘁𝗼𝗿𝗲</div>
-    </div>
-
-    <!-- BUTTON 1 (GRUP WHATSAPP) -->
-    <a href="https://chat.whatsapp.com/LPe4CpkqcwJE1uYzZVFLdv"
-       class="btn">
-       𝐉𝐁 𝐑𝐈𝐙𝐙𝐘 𝐒𝐓𝐎𝐑𝐄 𝟏
-    </a>
-
-        <!-- BUTTON 2 (GRUP WHATSAPP) -->
-    <a href="https://chat.whatsapp.com/CoXaSJVlzwu26gKISS1Cpu"
-       class="btn">
-       𝐉𝐁 𝐑𝐈𝐙𝐙𝐘 𝐒𝐓𝐎𝐑𝐄 𝟐
-    </a>
-
-<!-- BUTTON 3 (GRUP WHATSAPP) -->
-    <a href="https://whatsapp.com/channel/0029VbBhtsTEwEjz1dAsCZ2b"
-       class="btn">
-       𝐂𝐇 𝐀𝐋𝐋 𝐈𝐍𝐅𝐎 𝟏
-    </a>
-
-<!-- BUTTON 4 (GRUP WHATSAPP) -->
-    <a href="https://whatsapp.com/channel/0029VbBwjP8E50UcnRAZGF0P"
-       class="btn">
-       𝐂𝐇 𝐀𝐋𝐋 𝐈𝐍𝐅𝐎 𝟐
-    </a>
-
-<!-- BUTTON 2 (GRUP WHATSAPP) -->
-    <a href="https://chat.whatsapp.com/KtxuPvDfcuX3wIPUQgk7kM"
-       class="btn">
-       𝐀𝐑𝐄𝐀 𝐍𝐆𝐎𝐁𝐑𝐎𝐋 𝐑𝐈𝐙𝐙𝐘
-    </a>
-
-
+<div class="header">
+𝐑𝐄𝐗𝐙𝐘 𝐒𝐓𝐎𝐑𝐄
 </div>
 
-<!-- FLOAT WA -->
-<a href="https://wa.me/message/F7PVKQFIAYB2G1" class="float-wa">
-    <img src="https://i.ibb.co.com/yns4YffP/Proyek-Baru-F62-A330.png">
-</a>
+<div class="banner">
+    <img src="https://i.supaimg.com/31bcad5a-f3a0-4c6b-b3d1-8d8bddc793db.png">
+</div>
+
+<div class="menu">
+    <div class="menu-box">
+        <img src="https://i.supaimg.com/85142ccb-e63b-4007-a7ad-6ec6d7a6435a.png">
+        <h3>𝗕𝗘𝗟𝗜 𝗗𝗔𝗡 𝗥𝗘𝗡𝗧𝗔𝗟 𝗔𝗞𝗨𝗡 𝗙𝗥𝗘𝗘 𝗙𝗜𝗥𝗘𝗘<br></h3>
+        <a href="https://wa.me/62895429491238"_blank">KLIK DISINI</a>
+    </div>
+    <div class="menu-box">
+        <img src="https://i.supaimg.com/85142ccb-e63b-4007-a7ad-6ec6d7a6435a.png">
+        <h3>𝗧𝗘𝗦𝗧𝗜𝗠𝗢𝗡<br>𝗥𝗘𝗫𝗭𝗬 𝗦𝗧𝗢𝗥𝗘</h3>
+        <a href="https://whatsapp.com/channel/0029VbBhtsTEwEjz1dAsCZ2b" target="_blank">KLIK DISINI</a>
+    </div>
+</div>
+
+<div class="title">NOMER ADMIN DI SINI</div>
+
+<div class="admin-grid">
+    <div class="admin-box">
+        <img src="https://i.supaimg.com/85142ccb-e63b-4007-a7ad-6ec6d7a6435a.png">
+        <p>WHATSAPP ADMIN<br>FREE FIRE DAN GRUP</p>
+        <a href="https://chat.whatsapp.com/CoXaSJVlzwu26gKISS1Cpu"_blank">CHAT ADMIN</a>
+    </div>
+    <div class="admin-box">
+        <img src="https://i.supaimg.com/85142ccb-e63b-4007-a7ad-6ec6d7a6435a.png">
+        <p>WHATSAPP ADMIN<br>MLBB DAN ROBLOX</p>
+        <a href="https://wa.me/62895429491238" target="_blank">CHAT ADMIN</a>
+    </div>
+</div>
+
+
+  <!-- SPOTIFY ARTIST -->
+  <div class="spotify">
+    <iframe 
+      src="https://open.spotify.com/embed/artist/62mDZGBx9APuQGEoXFX6w5"
+      width="100%"
+      height="300"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+      style="border-radius:12px">
+    </iframe>
+  </div>
 
 </body>
 </html>
